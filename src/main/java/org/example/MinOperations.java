@@ -1,11 +1,6 @@
 package org.example;
 
 public class MinOperations {
-
-//    public static int minOperations(int[][] grid, int x) {
-//
-//    }
-
     public static int count(int n1, int n2, int x) {
         int small = Math.min(n1, n2);
         int greater = Math.max(n1, n2);
@@ -19,7 +14,7 @@ public class MinOperations {
         }
         int c = 0;
         while (small < greater) {
-            System.out.println("small "+small);
+            System.out.println("small " + small);
             small += x;
             c++;
             if (small == greater) {
@@ -31,6 +26,6 @@ public class MinOperations {
     }
 
     public static void main(String[] args) {
-        System.out.println(count(6,8,2));
+        System.out.println(count(6, 8, 2));
     }
 }
